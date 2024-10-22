@@ -55,7 +55,7 @@ a[href]:visited {
 a[href]:hover {
     text-decoration: underline;
 }
-a[href]:active {
+a:active {
     background-color: var(--color-light-grey);
 }
 
