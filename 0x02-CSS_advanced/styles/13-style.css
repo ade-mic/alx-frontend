@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* all anchor elements, set the foreground color value to #161616 */
-a {
+a[href] {
     color: var(--text-color);
     text-decoration: none;
 }
