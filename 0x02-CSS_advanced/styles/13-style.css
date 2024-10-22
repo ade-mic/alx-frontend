@@ -55,7 +55,7 @@ a:visited {
 a:hover {
     text-decoration: underline;
 }
-a:active {
+a[href]:active {
     background-color: var(--color-light-grey);
 }
 /* All elements with the class visually-hidden should have their display to none */
