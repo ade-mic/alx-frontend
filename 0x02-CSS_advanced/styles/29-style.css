@@ -204,7 +204,7 @@ a:active {
     color: var(--nav-item-link-hover);
 }
 /* Target the before pseudo elements of nav-link that is inside the nav */
-nav .nav-link::before {
+.nav .nav-link::before {
     content: "";
     position: absolute;
     top: 0;
