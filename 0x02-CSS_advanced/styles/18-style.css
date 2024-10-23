@@ -140,6 +140,7 @@ a:active {
     float: right;
 }
 .nav {
+    list-style: none;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -148,7 +149,7 @@ a:active {
     list-style: none;
 
 }
-.nav-item {
+.nav .nav-item {
     font-family: var(--nav-item-font-family);
     font-weight: var(--nav-item-font-weight);
     font-size: var(--nav-item-font-size);
