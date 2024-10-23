@@ -119,10 +119,9 @@ a:active {
 .button:hover {
     color: var(--button-hover-color);
     text-decoration: var(--button-hover-text-decoration);
-    background-color: var(--button-hover-background);
-    transition: color;
     transition-duration: var(--transition-duration);
     transition-property: background-color;
+    background-color: var(--button-hover-background);
 }
 
 /* All elements with the class visually-hidden should have their display to none */
