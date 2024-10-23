@@ -203,7 +203,7 @@ a:active {
 .nav.nav-link:hover {
     color: var(--nav-item-link-hover);
 }
-/* Target the before pseudo elements of nav-link that is inside the nav */
+
 nav .nav-link::before {
     content: "";
     position: absolute;
@@ -343,4 +343,121 @@ ul.row {
     position: var(--header-logo-link-position);
     top: var(--header-logo-link-top);
     left: var(--header-logo-link-left);
+}
+
+/* Target card-outer within the card-work */
+.card-work .card-outer {
+    position: relative; /* Relatively position the element */
+    overflow: hidden; /* Hide any overflow */
+}
+
+/* Target the image inside card-image inside card-work */
+.card-work .card-image img {
+    height: 30rem;
+     width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+/* Target card-inner inside card-work */
+.card-work .card-inner {
+    position: absolute;
+    top: -0.1rem; 
+    left: -0.1rem;
+    right: -0.1rem;
+    z-index: 1;
+}
+
+/* Target card-inner when card-work is hover */
+.card-work:hover .card-inner {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Target card-title inside card-work */
+.card-work .card-title {
+    text-align: center;
+    margin: 0; 
+    opacity: 0;
+    height: 100%;
+    position: relative;
+}
+
+/* Target the link inside card-title and card-work */
+.card-work .card-title a {
+    display: block; /* Make sure elements display as blocks */
+    text-decoration: none; /* Text should not be decorated */
+    padding-top: 45%; /* Padding on the top should be 45% */
+}
+
+/* Create the after pseudo elements of the link (inside card-title and card-work) */
+.card-work .card-title a::after {
+    content: ''; /* The content property of these elements should have an empty value */
+    position: absolute; /* Absolutely position the selected elements */
+    top: 0; /* Set the top position to be 0 */
+    right: 0; /* Set the right position to be 0 */
+    bottom: 0; /* Set the bottom position to be 0 */
+    left: 0; /* Set the left position to be 0 */
+}
+
+/* Target card-title when card-work is hover */
+.card-work:hover .card-title {
+    opacity: 1; /* The opacity of these elements should be set to the value of 1 */
+}
+
+/* Target the card-quote that is inside the card-testimonial */
+.card-testimonial .card-quote {
+    position: relative; 
+}
+
+/* Target the before pseudo-element of card-quote that is inside the card-testimonial */
+.card-testimonial .card-quote::before {
+    content: "\201C"; 
+    position: absolute; 
+    top: -4.5rem; 
+    left: -1rem; 
+    color: #efeded; 
+    font-size: 10rem; 
+    z-index: -1; 
+}
+
+/* Create custom properties */
+:root {
+    --transition-duration: .3s;
+    --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
+}
+
+/* Add transformations on the card work */
+/* Target the card-image when card-work is hover */
+.card-work:hover .card-image {
+    transform: scale(1.2);
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+/* Target the card-outer when card-work is hover */
+.card-work:hover .card-outer {
+    transform: scale(0.95);
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+/* Add animations on the navigation items */
+/* Inside .nav .nav-link::before */
+.nav .nav-link::before {
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+/* Animate the button background */
+/* In the hover state of the button class */
+.button:hover {
+    transition: color var(--transition-duration), background-color var(--transition-duration);
+}
+
+/* Add transitions on the card works */
+/* Inside card-work:hover .card-image */
+.card-work:hover .card-image {
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+/* Inside .card-work .card-inner */
+.card-work .card-inner {
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
