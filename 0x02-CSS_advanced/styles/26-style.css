@@ -288,6 +288,6 @@ ul.row {
  /* Target the <cite> HTML tag which is inside card-quote inside the card-testimonial */
  .card-testimonial .card-quote cite {
     display: block;
-    padding: 1rem;
+    padding-top: 1rem;
     color: var(--color-primary);
  }
