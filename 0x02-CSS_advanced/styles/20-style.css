@@ -195,3 +195,10 @@ ul.row {
 .footer ul {
     text-align: right;
 }
+
+/* creates a new row after each instance of the class row with the */
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
