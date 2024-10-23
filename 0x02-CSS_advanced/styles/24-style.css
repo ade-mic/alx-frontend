@@ -231,7 +231,7 @@ ul.row {
     color: var(--text-color);
  }
  /* Target card-title that is inside card-services */
- .card-title .card-services {
+ .card-services .card-title {
     margin: 0;
  }
  
