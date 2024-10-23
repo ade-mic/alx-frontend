@@ -447,7 +447,7 @@ ul.row {
 
 /* Animate the button background */
 /* In the hover state of the button class */
-.button:hover {
+button:hover {
     transition: color var(--transition-duration), background-color var(--transition-duration);
 }
 
