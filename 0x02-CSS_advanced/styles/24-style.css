@@ -230,7 +230,7 @@ ul.row {
  .social-link svg {
     color: var(--text-color);
  }
-
+ /* Target card-title that is inside card-services */
  .card-title .card-services {
     margin: 0;
  }
