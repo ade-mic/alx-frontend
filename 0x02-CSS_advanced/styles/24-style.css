@@ -232,7 +232,7 @@ ul.row {
  }
 
  .card-title .card-services {
-    margin: none none none none;
+    margin: 0;
  }
  
  .card-services a {
