@@ -272,3 +272,22 @@ ul.row {
     text-decoration: none;
  }
  
+ /* card-testimonial selector */
+ .card-testimonial {
+    text-align: center;
+ }
+
+ /* Target the card-avatar that is inside the card-testimonial */
+ .card-testimonial .card-avatar {
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+
+ }
+
+ /* Target the <cite> HTML tag which is inside card-quote inside the card-testimonial */
+ .card-testimonial .card-quote cite {
+    display: block;
+    padding: 1rem;
+    color: var(--color-primary);
+ }
